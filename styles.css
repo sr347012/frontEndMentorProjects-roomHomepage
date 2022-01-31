@@ -1,0 +1,33 @@
+/* # Front-end Style Guide
+
+## Layout */
+
+/* The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px */
+
+/* ## Colors
+
+### Primary */
+
+/* --DarkGray hsl(0, 0%, 63%);
+--Black: hsl(0, 0%, 0%);
+--White: hsl(0, 0%, 100%);
+--VeryDarkGray: hsl(0, 0%, 27%); */
+
+/* ## Typography
+
+### Body Copy */
+
+/* --Fontsize: 12px; */
+
+/* ### Font */
+
+/* --Family: [Spartan](https://fonts.google.com/specimen/Spartan) */
+/* - Weights: 500, 600, 700 */
+
+* {
+    font-family: 'Spartan', sans-serif;
+    font-size: 12px;
+}

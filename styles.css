@@ -26,8 +26,121 @@
 
 /* --Family: [Spartan](https://fonts.google.com/specimen/Spartan) */
 /* - Weights: 500, 600, 700 */
+:root {
+--DarkGray : hsl(0, 0%, 63%);
+--Black: hsl(0, 0%, 0%);
+--White: hsl(0, 0%, 100%);
+--VeryDarkGray: hsl(0, 0%, 27%);
+}
 
 * {
     font-family: 'Spartan', sans-serif;
     font-size: 12px;
+    
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+header {
+    display: flex;
+    width: 90%;
+    height: 10vh;
+    top: 1%;
+    left: 5%;
+    z-index: 1;
+    position: absolute;
+    /* background-color: blue; */
+    margin: auto;
+    color: var(--White);
+    /* justify-content: space-around; */
+}
+
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+
+    
+}
+.nav-link {
+    list-style: none;
+    flex: 1;
+    /* padding: 2%;
+    margin: 5%;
+    align-items: flex-end;
+     justify-content: space-between; */
+     /* letter-spacing: 2%; */
+    /* display: flex; */ 
+}
+.grid-items {
+    display: grid;
+    /* gap: 2rem; */
+    /* padding: 1rem; */
+    grid-template-columns: repeat(3, 1fr);
+}
+.section-class {
+    width: 90%;
+    margin: auto;
+    border: 2px solid;
+    padding: 2px;
+    position: relative  ;
+}
+.card-section-heading {
+    font-size: 22px;
+    font-weight: 700;
+}
+.card-section-text {
+    font-size: 12px;
+    color: var(--DarkGray);
+}
+.about-card-heading {
+    font-size: 22px;
+    font-weight: 600;
+    /* margin: 10px;
+    padding: 2px; */
+    height: auto;
+    letter-spacing: 10%;
+    text-align: left;
+    /* text-justify: newspaper; */
+    margin-bottom: 5%;
+}
+
+.grid-col-span-2 {
+    grid-column: span 2;
+}
+
+.grid-row-span-2 {
+    grid-row: span 2;
+}
+
+.grid-main {
+    grid-column-start: 1;
+    grid-column-end: span 3;
+    border: 1px solid red;
+}
+.grid-main-item {
+    grid-template-columns: 60% 40%;
+}
+
+.grid-items section img {
+    width: auto;
+    height: auto;
+    border-radius: 20px;
+}
+
+.position-relative {
+    position: relative;
+    display: flex;
+    display: inline;
 }
